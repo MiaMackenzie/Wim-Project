@@ -1,0 +1,342 @@
+span {
+    color: #1EAFDE;
+}
+
+.company-logo{
+  padding-left: 140%;
+  padding-right: 20%;
+  padding-top: 25%;
+  max-height: 200%;
+}
+
+
+a.home-link {
+  background-color: #25C389;
+  color: red;
+  margin: 0% 110%;
+  padding: 6% 0%;
+  height: 70%;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.icon-wrapper {
+  width: 30px; 
+  height: 100px; 
+  border-radius: 50%; 
+  background-color: #1EAFDE; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper {
+  margin-top: 40px; 
+}
+
+.left-arrow {
+  position: absolute; 
+  left: 3%; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.right-arrow {
+  position: absolute; 
+  right: 3%; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+
+
+.metro-style-box-text {
+  display: block;
+  border: 0 solid #186AA2;
+  border-left-width: .5rem;
+  background-color: #EFF5FC;
+  padding: .6rem 2.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin:  .2rem;
+}
+
+.retina-ready-box-text {
+  display: block;
+  border: 0 solid #DF6160;
+  border-left-width: .5rem;
+  background-color: #EFF5FC;
+  padding: .6rem 2.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin:  .2rem;
+}
+
+.responsive-design-box-text {
+  display: block;
+  border: 0 solid #FCBB00;
+  border-left-width: .5rem;
+  background-color: #EFF5FC;
+  padding: .6rem 2.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin:  .2rem;
+}
+
+.middle-title{
+  text-align: center;
+  padding: 1% 0%;
+}
+
+.middle-title,
+.things-that-we-doo {
+    text-align: center;
+}
+
+.things-that-we-do{
+  text-align: center;
+  padding: 2% 0%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "minion"
+    "middleTitle"
+    "things"
+    "wordBlock"
+    "lately"
+    "latestProject"
+    "things-that-we-do"
+    "thingsAbove"
+    "logosBar"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+}
+
+.minion-banner {
+  grid-area: minion;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+
+
+.things-that-we-do,
+.word-block,
+.Whats-up-lately,
+.our-latest-project,
+.Thingsofabove,
+.logos-bar {
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.word-block{
+  display: grid;
+  grid-template-columns: 1fr 1f 1fr 1fr 
+}
+
+p{
+  font-size: x-small;
+}
+
+.things-that-we-do,
+.our-latest-project,
+.Whats-up-lately,
+.Thingsofabove {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our-latest-project {
+  grid-area: latestProject;
+}
+
+.Thingsofabove {
+  grid-area: thingsAbove;
+}
+
+.logos-bar {
+  grid-area: logosBar;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-block-1,
+.footer-block-2,
+.footer-block-3,
+.footer-block-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-link .home-icon {
+  max-height: 20px;
+}
+
+header img {
+  max-height: 50px; 
+  max-width: 100px; 
+}
+
+.banner-image{
+max-width: 1000%;
+width: 310%;
+justify-content: left;
+}
+
+.footer-block-1 {
+  #rectangle {
+    width: 200px;
+    height: 100px;
+    background: red;
+  }
+  #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+  }
+}
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-block-1,
+.footer-block-2,
+.footer-block-3,
+.footer-block-4 {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Media query for screens larger than 768px (adjust the breakpoint as needed) */
+@media screen and (min-width: 768px) {
+  .footer-block-1,
+  .footer-block-2,
+  .footer-block-3,
+  .footer-block-4 {
+    flex: 0 0 23%; /* Adjust the percentage based on your layout preferences */
+  }
+}
+
+.rectangle1 {
+  width: 250px;
+  height: 3px;
+  background: green;
+}
+
+.triangle-down-1 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid green;
+      margin-left: 0.5cm;
+}
+
+.rectangle2 {
+  width: 250px;
+  height: 3px;
+  background: yellow;
+}
+
+.triangle-down-2 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid yellow;
+      margin-left: 0.5cm;
+}
+
+.rectangle3 {
+  width: 250px;
+  height: 3px;
+  background: red;
+}
+
+.triangle-down-3 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid red;
+      margin-left: 0.5cm;
+}
+
+.rectangle4 {
+  width: 250px;
+  height: 3px;
+  background: blue;
+}
+
+.triangle-down-4 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid blue;
+      margin-left: 0.5cm;
+}
+
+.footer-block-2 {
+  text-align: center;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flickr-photos {
+  width: 30%; 
+  margin: 10px; 
+  border: 1px solid #ddd; 
+  box-sizing: border-box;
+}
+
+/* CSS */
+
+.footer-block-3 {
+  text-align: center;
+}
+
+.tweet-container {
+  display: flex;
+  align-items: center;
+}
+
+.twitter-icon-circle {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px; 
+}
